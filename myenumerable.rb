@@ -1,10 +1,13 @@
-module MyEnumerable  
+# frozen_string_literal: true
+
+# This is a custom Enumerable modules with the filter, any? and all? methods
+module MyEnumerable
   def filter(&block)
     result = []
     @list.each do |elem|
       result.push(elem) if block.call(elem) == true
     end
-    return result
+    result
   end
 
   def any?(&block)
@@ -12,7 +15,7 @@ module MyEnumerable
     @list.each do |elem|
       result = true if block.call(elem) == true
     end
-    return result
+    result
   end
 
   def all?(&block)
@@ -20,7 +23,6 @@ module MyEnumerable
     @list.each do |elem|
       result.push(elem) if block.call(elem) == true
     end
-    return result.length == @list.length
+    result.length == @list.length
   end
-
 end
