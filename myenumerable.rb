@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This is a custom Enumerable modules with the filter, any? and all? methods
 module MyEnumerable
   def filter(&block)

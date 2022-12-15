@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'myenumerable'
 
 # This class is a list with an each method which include the MyEnumerable module
