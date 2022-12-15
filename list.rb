@@ -1,4 +1,4 @@
-require 'myenumerable'
+require_relative 'myenumerable'
 
 # This class is a list with an each method which include the MyEnumerable module
 class MyList
